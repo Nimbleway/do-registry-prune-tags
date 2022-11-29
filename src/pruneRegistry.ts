@@ -129,6 +129,8 @@ export default async function proneRegistry(): Promise<void> {
       //eslint-disable-next-line no-console
       core.info(`Prune Report for service "${repository.name}"`)
       //eslint-disable-next-line no-console
+      core.info(`EYAL EYAL"`)
+      //eslint-disable-next-line no-console
       console.table(
         listOfTagsBody.tags.reduce(
           (collector, {tag, updated_at}) =>
