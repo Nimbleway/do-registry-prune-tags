@@ -55,7 +55,7 @@ export default async function proneRegistry(): Promise<void> {
 
   for (let repository of listOfRepositories) {
     const listOfTagsResult = await fetch(
-      `https://api.digitalocean.com/v2/registry/${repository.registry_name}/repositories/${repository.name}/tags?per_page=200`,
+      `https://api.digitalocean.com/v2/registry/${repository.registry_name}/repositories/${repository.name}/tags?per_page=2000`,
       {
         headers: {
           Authorization: `Bearer ${apiToken}`
