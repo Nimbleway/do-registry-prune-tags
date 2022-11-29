@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PierreAndreis/do-registry-prune-tags.git"
+    "url": "git+https://github.com/Nimbleway/do-registry-prune-tags.git"
   },
   "keywords": [
     "actions",
