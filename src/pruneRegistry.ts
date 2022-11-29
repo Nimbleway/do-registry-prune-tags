@@ -177,6 +177,7 @@ export default async function proneRegistry(): Promise<void> {
         }
       }
     )
+    core.info('EYAL EYAL EYAL')
     core.info(`gc started on ${registryBody.registry.name}`)
   } else {
     core.info(`gc skipped`)
