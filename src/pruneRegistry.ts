@@ -19,7 +19,7 @@ import {
 export default async function proneRegistry(): Promise<void> {
   const quiet = core.getInput('quiet')
 
-  const twoMonthsAgo = subDays(new Date(), 90)
+  const twoMonthsAgo = subDays(new Date(), 60)
   const yearAgo = subDays(new Date(), 365)
 
   const apiToken = core.getInput('token')
@@ -55,7 +55,7 @@ export default async function proneRegistry(): Promise<void> {
 
   for (let repository of listOfRepositories) {
     const listOfTagsResult = await fetch(
-      `https://api.digitalocean.com/v2/registry/${repository.registry_name}/repositories/${repository.name}/tags?per_page=2000`,
+      `https://api.digitalocean.com/v2/registry/${repository.registry_name}/repositories/${repository.name}/tags?per_page=200`,
       {
         headers: {
           Authorization: `Bearer ${apiToken}`
