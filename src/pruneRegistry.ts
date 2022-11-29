@@ -40,7 +40,7 @@ export default async function proneRegistry(): Promise<void> {
   const registryBody: RegistryResponseData = await registryResult.json()
 
   const listOfRepositoriesResult = await fetch(
-    `https://api.digitalocean.com/v2/registry/${registryBody.registry.name}/repositories`,
+    `https://api.digitalocean.com/v2/registry/${registryBody.registry.name}/repositoriesV2?per_page=200`,
     {
       headers: {
         Authorization: `Bearer ${apiToken}`
