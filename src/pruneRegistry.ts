@@ -156,6 +156,7 @@ export default async function proneRegistry(): Promise<void> {
         }
       )
       if (!quiet) {
+        core.info('EYAL EYAL EYAL')
         core.info(
           `pruned tag ${tag} of repository ${repository.name} from registry ${repository.registry_name}`
         )
