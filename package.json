@@ -9,7 +9,6 @@
     "format-check": "prettier --check **/*.ts",
     "lint": "eslint src/**/*.ts",
     "package": "ncc build src/main.ts --source-map --license licenses.txt -m",
-    "test": "jest",
     "all": "yarn format && yarn lint && yarn test && yarn package",
     "dev": "nodemon src/main.ts"
   },
