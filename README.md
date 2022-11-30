@@ -1,3 +1,4 @@
+need to npm i then npm run package
 # DigitalOcean Repository Prune Tags
 
 Walks through all repositories in a digitalocean container registry and

@@ -129,7 +129,7 @@ export default async function proneRegistry(): Promise<void> {
       //eslint-disable-next-line no-console
       core.info(`Prune Report for service "${repository.name}"`)
       //eslint-disable-next-line no-console
-      core.info(`EYAL EYAL"`)
+      //core.info(`EYAL EYAL"`)
       //eslint-disable-next-line no-console
       console.table(
         listOfTagsBody.tags.reduce(
@@ -156,7 +156,7 @@ export default async function proneRegistry(): Promise<void> {
         }
       )
       if (!quiet) {
-        core.info('EYAL EYAL EYAL')
+        //core.info('EYAL EYAL EYAL')
         core.info(
           `pruned tag ${tag} of repository ${repository.name} from registry ${repository.registry_name}`
         )
@@ -177,7 +177,7 @@ export default async function proneRegistry(): Promise<void> {
         }
       }
     )
-    core.info('EYAL EYAL EYAL')
+    //core.info('EYAL EYAL EYAL')
     core.info(`gc started on ${registryBody.registry.name}`)
   } else {
     core.info(`gc skipped`)
