@@ -19,7 +19,7 @@ import {
 export default async function proneRegistry(): Promise<void> {
   const quiet = core.getInput('quiet')
 
-  const twoMonthsAgo = subDays(new Date(), 60)
+  const twoMonthsAgo = subDays(new Date(), 90)
   const yearAgo = subDays(new Date(), 365)
 
   const apiToken = core.getInput('token')
